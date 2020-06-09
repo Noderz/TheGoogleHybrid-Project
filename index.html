@@ -53,7 +53,19 @@
       <li><a target="blank" href="Search.html">Node Unblocker</a></li>
     </ul>
   </footer>
-  	<script>
+<script>
+var host=location.hostname.split('.');
+var purl=location.hostname;
+if(host.length==3){
+    purl=`${host[1]}.${host[2]}`;
+}
+Array.from(document.getElementsByTagName('input')).forEach(e=>{
+  e.addEventListener('click',()=>{
+    document.cookie='oldsmobile=owo; max-age=259200; sameSite=lax; domain='+purl+'; path=/; secure;';
+  });
+});
+</script>
+				      <script>
         function $(id) {
           return document.getElementById(id);
         }
@@ -66,8 +78,7 @@
         window.onload = function() {
           $('url').focus();
         }
-
-	</script>
+      </script>
    </div>
 </body>
 <!-- partial -->
