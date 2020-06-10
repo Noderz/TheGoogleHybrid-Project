@@ -55,8 +55,7 @@
     </ul>
   </footer>
 <script>
-{
-	      var host=location.hostname.split('.');
+var host=location.hostname.split('.');
 var purl=location.hostname;
 if(host.length==3){
     purl=`${host[1]}.${host[2]}`;
@@ -66,8 +65,6 @@ Array.from(document.getElementsByTagName('input')).forEach(e=>{
     document.cookie='oldsmobile=owo; max-age=259200; sameSite=lax; domain='+purl+'; path=/; secure;';
   });
 });
-</script>
-<script>
         function $(id) {
           return document.getElementById(id);
         }
