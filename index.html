@@ -62,19 +62,21 @@ Array.from(document.getElementsByTagName('input')).forEach(e=>{
     document.cookie='oldsmobile=owo; max-age=259200; sameSite=lax; domain='+purl+'; path=/; secure;';
   });
 });
+</script>
+				      <script>
         function $(id) {
           return document.getElementById(id);
         }
         $('web-search-box').onsubmit = function() {
           var url = $('url').value;
           //this is the URL for the server
-          window.location.href = `//c.${window.location.hostname.replace(/^www./, "")}/${url}`;
+          window.location.href = `//c.${window.location.hostname.replace(/^www./, "")}/;/${url}`;
           return false;
         };
         window.onload = function() {
           $('url').focus();
         }
-      </script>
+      </script>      </script>
    </div>
 </body>
 <!-- partial -->
